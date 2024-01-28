@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/65281/meadow-green-grass-nature-65281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: contain;
+}
+#game{
+    height: 500px;
+    width: 390px;
+    border: 3px solid;
+    margin: 40px auto;
+    background: url(bg.jpg);
+    background-size: contain;
+    overflow: hidden;
+}
+#bluecar{
+    height: 100px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation: move 2s linear infinite;
+    text-align: center;
+}
+#bluecar img{
+    height: 100px;
+}
+@keyframes move{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 501px;
+    }
+}
+#racecar{
+    height: 100px;
+    position: relative;
+    top: 250px;
+    text-align: center;
+}
+#racecar img{
+    height: 100px;
+}
+
+#result{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 140px;
+    padding-top: 20px;
+    color: #fff;
+    display: none;
+
+}
+#score{
+    font-size: 2.2rem;
+    color: brown;
+}
+#inner{
+    margin-left: 20px;
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+}
+#btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: cyan;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.butt{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: 258px;
+
+}
+.butt button{
+    width: 100px;
+    height: 40px;
+    font-size: 40px;
+    background-color: rgb(236, 127, 2);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+@media (max-width:400) {
+    #result{
+        width: 97vw;
+    }
+}
